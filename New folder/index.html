@@ -3,12 +3,21 @@
 <head>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
 	<script src="https://kit.fontawesome.com/0900ce0ce0.js" crossorigin="anonymous"></script>
 	<link rel="stylesheet" type="text/css" href="style.css">
 	<script type="text/javascript" src="addtocart.js"></script>
 	<script type="text/javascript" src="cart.js"></script>
+	<script type="text/javascript" src="navhighlight.js"></script>
 	<title>M&L Furnishings</title>
 </head>
+
+	<style>
+		.nav a.active{
+			color: orange;
+		}
+	</style>	
+
 <body>
 
 	<div class="top-container">
@@ -51,8 +60,9 @@
 			<div class="addtocart">
 
 			
-					<div class="cart-icon">
-						<i class="fas fa-shopping-cart"></i>
+				<div class="cart-icon">
+					<span class="item-count">0</span>
+					<i class="fas fa-shopping-cart"></i>
 					
 
 				</div>
@@ -104,7 +114,11 @@
 	<section class="furniture" id="furniturepage">
 
 		<div class="classifications">
-			<h1>CHAIR</h1>
+
+			<div class="border"></div>
+			<div class="type"><h1>CHAIR</h1></div>
+			<div class="border"></div>
+
 		</div>
 
 		<div class="furniturepage furniturepage1">
@@ -116,7 +130,7 @@
 				<span class="original">₱9,999</span>
 				<br>
 				<br>
-				<span><button class="cart">ADD TO CART</button></span>
+				<button class="cart">ADD TO CART</button>
 			</div>
 
 			<div data-id = "2"  class="furnitures">
@@ -233,7 +247,9 @@
 
 
 		<div class="classifications">
-			<h1>SOFA</h1>
+			<div class="border"></div>
+			<div class="type"><h1>SOFA</h1></div>
+			<div class="border"></div>
 		</div>
 
 		<div class="furniturepage furniturepage2">
