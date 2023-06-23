@@ -554,6 +554,7 @@ a{
 	flex: wrap;
 	margin-top: 50px;
 	padding: 20px;
+	
 
 
 }
@@ -601,6 +602,7 @@ a{
 	margin: 40px;
 	margin-bottom: 0;
 	padding: 20px;
+	padding-bottom: 0;
 	text-align: center;
 }
 
@@ -625,7 +627,8 @@ a{
 	flex: 20%;
 	padding: 10px;
 	margin: 50px;
-	margin-bottom: 0;
+	margin-top: 30px;
+	margin-bottom: 40px;
 	text-align: center;
 	border-radius: 10px;
 	box-shadow: 0px 0px 2px dimgray;
@@ -640,14 +643,17 @@ a{
 	margin-left: 20px;
 }
 
-.membername{
-	font-size: 20px;
-	font-weight: bold;
-}
+
 
 .member p{
+	font-size: 12px;
 	padding: 5px;
 	text-align: center;
+}
+
+.membername{
+	font-size: 18px;
+	font-weight: bold;
 }
 
 .member img{
@@ -707,7 +713,10 @@ a{
 
 .concerns{
 	padding: 20px;
-	margin-bottom: 50px;
+	padding-top: 0;
+	padding-bottom: 10;
+	margin-bottom: 20px;
+	font-size: 20px;
 	text-align: center;
 }
 
@@ -715,37 +724,115 @@ a{
 	border: solid 0.5px gray;
 	text-align: left;
 	margin: 10px;
-	margin-left: 60px;
+	margin-left: 30px;
 	display: block;
-	width: 65%;
+	width: 80%;
 	height: 30px;
 	padding: 10px;
 	border-radius: 5px;
 }
 
 .forms .feedback{
-	height: 100px;
+	height: 80px;
 }
 
 .forms label{
 	font-weight: bolder;
-	margin-left: 60px;
+	margin-left: 30px;
+	font-size: 12px;
 }
 
-.feedback::placeholder{
-
-}
 
 
 .submit-btn{
-	height: 25px;
-	width: 90px;
+	height: 20px;
+	width: 70px;
 	padding: 2px;
-	font-size: 15px;
+	font-size: 12px;
 	color: black;
-	margin-left: 180px;
+	margin-left: 190px;
 	background-color: orange;
 	border-radius: 5px;
 	border: .5px solid gray;
 
 }
+
+.submit-btn:hover{
+	background-color: ghostwhite;
+	cursor: pointer;
+}
+
+
+.response{
+	display: none;
+	text-align: justify;
+	width: 80%;
+	margin-top: 10px;
+	margin-left: 60px;
+	padding: 20px;
+	padding-bottom: 0;
+	font-size: 12px;
+
+}
+
+
+/* FOOTER */
+
+.footer {
+  background-color: #161612e8;
+}
+
+.footer-row {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.footer-col {
+  width: 25%;
+  margin: 30px;
+}
+
+
+.footer-col h4{
+	font-size: 15px;
+	color: white;
+	margin-bottom: 30px;
+	text-decoration: underline orange 2px;
+	text-underline-offset: .5em;
+
+}
+
+
+.footer-col a {
+  font-size: 15px;
+  text-decoration: none;
+  color: white;
+  display: block;
+  transition: all 0.3s ease;
+}
+
+.footer-col a:hover {
+  color: #ffa600;
+  padding-left: 6px;
+}
+
+.icons li {
+  display: block;
+  padding-left: 0;
+}
+
+.icons i {
+  margin-right: 20px;
+}
+
+.icons a {
+  display: inline;
+  color: white;
+  transition: all 0.5 ease;
+}
+
+.icons i:hover {
+  color: #ffa600;
+}
+
